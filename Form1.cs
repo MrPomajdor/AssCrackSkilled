@@ -14,7 +14,7 @@ namespace AssCrack_skilled
 
         void Log(string text)
         {
-            log.Items.Add(text);
+            log.Items.Add(">"+text);
             log.TopIndex = log.Items.Count - 1;
         }
 
@@ -112,7 +112,7 @@ namespace AssCrack_skilled
         {
             InitializeComponent();
             Log("init!");
-
+            
             RefreshUI();
         }
 

@@ -87,6 +87,8 @@
             this.log.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(169)))), ((int)(((byte)(217)))));
             this.log.FormattingEnabled = true;
             this.log.ItemHeight = 17;
+            this.log.Items.AddRange(new object[] {
+            "--start--"});
             this.log.Location = new System.Drawing.Point(0, 106);
             this.log.Name = "log";
             this.log.SelectionMode = System.Windows.Forms.SelectionMode.None;
