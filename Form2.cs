@@ -26,6 +26,7 @@ namespace AssCrack_skilled
         public Form2()
         {
             InitializeComponent();
+            pictureBox1.Load("http://51.77.48.168/team.png");
         }
 
         private void button4_Click(object sender, EventArgs e)

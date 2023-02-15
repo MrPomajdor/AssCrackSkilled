@@ -1,6 +1,9 @@
 using System.Net;
 using System;
 using System.Diagnostics;
+using System.Media;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace AssCrack_skilled
 {
@@ -186,6 +189,8 @@ namespace AssCrack_skilled
         private void button5_Click(object sender, EventArgs e)
         {
             Form2 form = new Form2();
+            SoundPlayer x = new SoundPlayer(Properties.Resources.start);
+            x.Play();
             form.Show();
         }
     }
