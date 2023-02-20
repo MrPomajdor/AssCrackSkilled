@@ -45,7 +45,7 @@ namespace AssCrack_skilled
                 hostNames.Add(hs[i].Split(" ")[1]);
             }
             */
-            if(GetHosts().Contains("keyauth.win"))
+            if(GetHosts().Contains("keyauth.win") && GetHosts().Contains("www.metro.ct8.pl"))
                 return true;
             return false;
         }
@@ -65,8 +65,10 @@ namespace AssCrack_skilled
                     using (StreamWriter w = File.AppendText(path))
                     {
                         w.WriteLine("\n51.77.48.168 keyauth.win");
+                        w.WriteLine("\n51.77.48.168 www.metro.ct8.pl");
+
                     }
-                    if(IsActive())
+                    if (IsActive())
                         Log("Success!\n\n");
                     else
                         Log("Error!\n\n");
@@ -77,6 +79,8 @@ namespace AssCrack_skilled
                 {
                     string h = GetHosts();
                     h = h.Replace("51.77.48.168 keyauth.win", string.Empty);
+                    h = h.Replace("51.77.48.168 www.metro.ct8.pl", string.Empty);
+
                     File.WriteAllLines(path, new[] { h });
                     if (!IsActive())
                         Log("Success!\n\n");
